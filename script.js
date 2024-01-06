@@ -45,7 +45,7 @@ function searchByCity() {
 
 function weatherReport(data) {
 
-    var urlcast = `http://api.openweathermap.org/data/2.5/forecast?q=${data.name}&` + `appid=${API_KEY}`;
+    var urlcast = `https://api.openweathermap.org/data/2.5/forecast?q=${data.name}&` + `appid=${API_KEY}`;
 
     fetch(urlcast).then((res) => {
         return res.json();
