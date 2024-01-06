@@ -30,7 +30,7 @@ function getWeatherByLocation() {
 
 function searchByCity() {
     var cityInput = document.querySelector('.city-input').value;
-    var urlsearch = `http://api.openweathermap.org/data/2.5/weather?q=${cityInput}&` + `appid=${API_KEY}`;
+    var urlsearch = `https://api.openweathermap.org/data/2.5/weather?q=${cityInput}&` + `appid=${API_KEY}`;
 
     fetch(urlsearch).then((res) => {
         return res.json();
