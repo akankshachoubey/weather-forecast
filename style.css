@@ -113,6 +113,7 @@ nav ul a:hover {
     height: 30px;
     cursor: pointer;
     border: none;
+    transition: width 3s, height 4s;
 }
 
 .search-bar h3 {
